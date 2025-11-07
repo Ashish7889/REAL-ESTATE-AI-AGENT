@@ -1,0 +1,21 @@
+{
+  "name": "miss-riverwood-server",
+  "version": "1.0.0",
+  "description": "Miss Riverwood AI Voice Agent Backend",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "cd ../client && npm install && npm run build",
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "build:start": "npm run build && npm start"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "@google/generative-ai": "^0.2.1",
+    "axios": "^1.6.2"
+  }
+}
+

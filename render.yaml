@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: miss-riverwood-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      # Add other environment variables here:
+      # - key: MONGODB_URI
+      #   value: your_mongodb_uri
+      # - key: GEMINI_API_KEY
+      #   value: your_gemini_key
+      # - key: ELEVENLABS_API_KEY
+      #   value: your_elevenlabs_key
